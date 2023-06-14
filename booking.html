@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <!-- --------------------scroll up---------------------------- -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> <i class='bx bx-chevron-up' ></i> </button>
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+     
+
+
+
+        <div class="container">
+            <form  action="mailto:augustinedavid2211@gmail.com", action="mailto:augustinedavid3426@gmail.com" method="post" enctype="text/plain">
+                <h2>Booking Details</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+    
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+<!--     
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"> -->
+    
+                <!-- <label for="time">Time:</label>
+                <input type="time" id="time" name="time"> -->
+
+                <div class="select">
+                    <div class="sect1">
+                        <label for="time">Departing Date</label>
+                        <input type="date" id="time" name="time">
+                        <!-- <select name="select" id="select">
+                            <option value="click">Click To Select</option>
+                            <option value="select">from a Friend</option>
+                            <option value="select">Social Media</option>
+                            <option value="select">Adverts</option>
+                        </select>  -->
+                    </div>
+                    <div class="sect2">
+                        <label for="time">Returning Date</label>
+                        <input type="date" id="time" name="time">
+                        <!-- <select name="select" id="select">
+                            <option value="click">Click To Select</option>
+                            <option value="select">from a Friend</option>
+                            <option value="select">Social Media</option>
+                            <option value="select">Adverts</option>
+                        </select>  -->
+                    </div>
+                </div>
+
+
+                <div class="select">
+                    <div class="sect1">
+                        <label for="select">Choose Your Location</label>
+                       
+                        <select name="select" id="select">
+                            <option value="click">Click To Select</option>
+                            <option value="select">from a Friend</option>
+                            <option value="select">Social Media</option>
+                            <option value="select">Adverts</option>
+                        </select> 
+                    </div>
+                    <!-- <div class="sect2">
+                        <label for="time">Departure Time</label>
+                        <input type="time" id="time" name="time">
+                         <select name="select" id="select">
+                            <option value="click">Click To Select</option>
+                            <option value="select">from a Friend</option>
+                            <option value="select">Social Media</option>
+                            <option value="select">Adverts</option>
+                        </select>  
+                    </div> -->
+                </div>
+                
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter any additional information"></textarea>
+    
+                <button type="submit" class="button">Book Now</button>
+            </form>
+        </div>
+  
+    
+     
+</body>
+</html>

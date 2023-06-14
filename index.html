@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+ 
+
+    <!-- <div class="mobile-container">
+        <div class="topnav">
+            <a href="javascript:void(0);"
+            class="icon" onclick="myFunction()">
+            <i class='bx bx-menu'></i>
+            </a>
+            <a href="#" class="active"></a>
+            <div id="myLinks">
+                <a href="#">News</a>
+                <a href="#">contact</a>
+                <a href="#">About</a>
+                <a href="#">News</a>
+            </div>
+
+        </div>
+        <-- <div style="padding-left:16px;">
+            <h1>david ihl;ughliug</h1>
+        </div> -->
+ <!--   </div>
+    <script>
+function myFunction() {
+    var x = 
+    document.getElementById("myLinks");
+    if (x.style.display === "block"){
+        x.style.display = "none";
+    }
+    else {
+        x.style.display = "block";
+    }
+}
+
+    </script> -->
+    
+    <header class="header1 bd-grid">
+        <marquee behavior="#" direction="#">
+            <p>Need more orders inbox us @+234-706-314-3426</p>
+        </marquee>
+    </header>
+    <header class="header-head">
+<!-- <header class="header2">
+    <div class="nav1">
+        <a href="index.html"><h1>LOGO</h1></a>
+    </div>  
+
+    <div class="nav2">
+        <ul class="nav-list">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="about.html">About Us</a></li>
+            <li class="nav-link"><a href="contact.html">Contact Us</a></li>
+            <li class="nav-link"><a href="#offer">Offer</a></li>
+            <li class="nav-link"><a href="#review">Review</a></li>
+        </ul>
+    </div>
+   
+
+    <div class="nav3">
+        <div class="nav-signin">
+         <a href="login.html"><i class='bx bx-user'></i></a>
+    </div>
+        <div class="nav-menu">
+        <a href="#"><i class='bx bx-menu'></i></a>
+    </div>
+    </div>
+</header> -->
+<nav>
+    <div class="logo">
+        <img src="logo.svg" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Offer</a></li>
+        <li><a href="#">Review</a></li>
+        <li><button class="login-button" href="#">Book Now</button></li>
+        <!-- <li><button class="join-button" href="#">Join</button></li> -->
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+</script>
+
+<!-- ---------section 1------------ -->
+ 
+
+<section class="sect1" id="sect1">
+
+    <div class="sect1-h1"><h1>LET'S <br>TRAVEL </h1></div>
+    <div class="sect1-p"><p>Making your vacation dreams a reality</p></div>
+    <div class="sect1-button-link">
+        <form action="#">
+            <a href="booking.html"><input type="button" class="input" value="PLAN YOUR VACATION"></a>
+        </form>
+    </div>
+       </section>
+    </header>
+
+       <!-- --------------------scroll up---------------------------- -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> <i class='bx bx-chevron-up' ></i> </button>
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+       <!-- -------section 0------------ -->
+       <section class="sect0">
+        <div class="destination-h1"><h1>POPULAR TOUR<strong> PLACES</strong></h1></div>
+        <div class="destination-img">
+          <div class="img-container">
+            <div class="img1"><h2>$500</h2></div>
+            <div class="img-h1"><h1>ROME,<strong>ITALY</strong></h1></div>
+            <div class="img-p"><p>3 Days Breakfast and guided tours</p></div>
+        </div>
+          <div class="img-container">
+            <div class="img1"><h2>$700</h2></div>
+            <div class="img-h1"><h1>PARIS,<strong>FRANCE</strong></h1></div>
+            <div class="img-p"><p>3 Days Breakfast and guided tours</p></div>
+        </div>
+          <div class="img-container">
+            <div class="img1"><h2>$300</h2></div>
+            <div class="img-h1"><h1>LONDON,<strong>UK</strong></h1></div>
+            <div class="img-p"><p>3 Days Breakfast and guided tours</p></div>
+        </div>
+        </div>
+    </section>
+        <section class="offer" id="offer">
+            <h1>What we <strong>offer</strong></h1>
+        </section>
+       <!-- -----------section 2-------- -->
+ <section class="sect2" id="sect2">
+    <div class="sect2-container">
+<a href="#sect3">
+    <button class="button1">
+    <div class="h1"><h1>Amazing pools</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#sect4">
+    <button class="button1">
+    <div class="h1"><h1>Rooms</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#sect5">
+    <button class="button1">
+    <div class="h1"><h1>Breachfront</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#sect6">
+    <button class="button1">
+    <div class="h1"><h1>Islands</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#sect7">
+    <button class="button1">
+    <div class="h1"><h1>National parks</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#">
+    <button class="button1">
+    <div class="h1"><h1>Countryside</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#">
+    <button class="button1">
+    <div class="h1"><h1>Island</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#">
+    <button class="button1">
+    <div class="h1"><h1>Countryside</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#">
+    <button class="button1">
+    <div class="h1"><h1>Windmills</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#">
+    <button class="button1">
+    <div class="h1"><h1>Luxe</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#">
+    <button class="button1">
+    <div class="h1"><h1>Towers</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+<a href="#">
+    <button class="button1">
+    <div class="h1"><h1>Ski-in/out</h1></div>
+    <div class="button1-icon">
+    <i class='bx bx-menu'></i></div>
+</button>
+</a>
+    </div>
+</section>
+<!-- ----------section 3---------------- -->
+
+<section class="sect3" id="sect3">
+    <div class="tag"><h1>Amazing pools</h1></div>
+    <div class="sect3-container">
+
+        <div class="cont1">
+            <div class="s3-img1"></div>
+           
+            <div class="s3-text">
+                <div class="s3-p1">
+                    <a href="#"><p>Ngaparou, Senegal</p></a>
+                    <p><i class='bx bxs-star'></i>4.86</p>
+            </div>
+            <div class="s3-p2"><p>2,403 kilometers away</p></div>
+            <div class="s3-p3"><h3>$144 night</h3></div>
+        </div>
+        
+        </div>
+      
+  
+
+        <div class="cont1">
+            <div class="s3-img2"></div>
+           
+            <div class="s3-text">
+                <div class="s3-p1">
+                    <a href="#"><p>El Pajar, Spain</p></a>
+                    <p><i class='bx bxs-star'></i>4.89</p>
+            </div>
+            <div class="s3-p2"><p>3,108 Kilometers away <br> jul 4-9</p></div>
+            <div class="s3-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+     
+
+        <div class="cont1">
+            <div class="s3-img3"></div>
+           
+            <div class="s3-text">
+                <div class="s3-p1">
+                    <a href="#"><p>Pasito Blanco, Spain</p></a>
+                    <p><i class='bx bxs-star'></i>5.0</p>
+            </div>
+            <div class="s3-p2"><p>3,104 kilometers away<br>jul 13-19</p></div>
+            <div class="s3-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+    </div>
+       </section>
+
+
+<!-- ----------------section 4-------------- -->
+<section class="sect4" id="sect4">
+    <div class="tag2"><h1>Rooms</h1></div>
+    <div class="sect4-container">
+
+        <div class="cont2">
+            <div class="s4-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s4-text">
+                <div class="s4-p1">
+                    <a href="#"><p>Restu Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s4-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s4-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont2">
+            <div class="s4-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s4-text">
+                <div class="s4-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s4-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s4-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont2">
+            <div class="s4-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s4-text">
+                <div class="s4-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s4-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s4-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        </div>
+        </section>
+<!-- ----------------section 5-------------- -->
+ <section class="sect5" id="sect5">
+    <div class="tag3"><h1>Outline</h1></div>
+    <div class="sect5-container">
+
+        <div class="cont3">
+            <div class="s5-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s5-text">
+                <div class="s5-p1">
+                    <a href="#"><p>Restu Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s5-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s5-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont3">
+            <div class="s5-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s5-text">
+                <div class="s5-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s5-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s5-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont3">
+            <div class="s5-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s5-text">
+                <div class="s5-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s5-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s5-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div> 
+
+        </div>
+        </section>
+<!-- ----------------section 6-------------- -->
+ <section class="sect6" id="sect6">
+    <div class="tag4"><h1>Outline</h1></div>
+    <div class="sect6-container">
+
+        <div class="cont4">
+            <div class="s6-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s6-text">
+                <div class="s6-p1">
+                    <a href="#"><p>Restu Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s6-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s6-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont4">
+            <div class="s6-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s6-text">
+                <div class="s6-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s6-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s6-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont4">
+            <div class="s6-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s6-text">
+                <div class="s6-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s6-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s6-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div> 
+
+        </div>
+        </section>
+<!-- ----------------section 7-------------- -->
+ <section class="sect7" id="sect7">
+    <div class="tag5"><h1>Outline</h1></div>
+    <div class="sect7-container">
+
+        <div class="cont5">
+            <div class="s7-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s7-text">
+                <div class="s7-p1">
+                    <a href="#"><p>Restu Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s7-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s7-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont5">
+            <div class="s7-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s7-text">
+                <div class="s7-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s7-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s7-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont5">
+            <div class="s7-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s7-text">
+                <div class="s7-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s7-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s7-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div> 
+
+        </div>
+        </section>
+<!-- ----------------section 8-------------- -->
+ <section class="sect8" id="sect8">
+    <div class="tag6"><h1>Outline</h1></div>
+    <div class="sect8-container">
+
+        <div class="cont6">
+            <div class="s8-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s8-text">
+                <div class="s8-p1">
+                    <a href="#"><p>Restu Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s8-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s8-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont6">
+            <div class="s8-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s8-text">
+                <div class="s8-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s8-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s8-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont6">
+            <div class="s8-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s8-text">
+                <div class="s8-p1">
+                    <a href="#"><p>Balian Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s8-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s8-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div> 
+
+        </div>
+        </section>
+<!-- ----------------section 9-------------- -->
+ <section class="sect9" id="sect9">
+    <div class="tag7"><h1>Outline</h1></div>
+    <div class="sect9-container">
+
+        <div class="cont7">
+            <div class="s9-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s9-text">
+                <div class="s9-p1">
+                    <a href="#"><p>Restu Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s9-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s9-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont7">
+            <div class="s9-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s9-text">
+                <div class="s9-p1">
+                    <a href="#"><p>Restu Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s9-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s9-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+        <div class="cont7">
+            <div class="s9-img"><i class='bx bxs-star'></i></div>
+           
+            <div class="s9-text">
+                <div class="s9-p1">
+                    <a href="#"><p>Restu Beach, Indonesia</p></a>
+                    <p><i class='bx bxs-star'></i>4.85</p>
+            </div>
+            <div class="s9-p2"><p>Viewed 43,685 times last week <br> 5 nights. jul 4-9</p></div>
+            <div class="s9-p3"><h3>$200 night</h3></div>
+        </div>
+        
+        </div>
+       
+
+        </div>
+        </section>
+
+        <section class="review" id="review">
+            <div class="review-container-1">
+                <h3>Reviews</h3>
+                <h1>What people saying...</h1>
+            </div>
+            <div class="review-container-2">
+
+                <div class="review-1">
+                    <div class="review-box">
+                        <div class="review-box-img"></div>
+                        <div class="review-box-text">
+                            <h1>John Stark</h1>
+                            <h3>Artist</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="review-rat">
+                        <h1>3.5
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </h1>
+                    </div>
+
+                    <div class="review-text">Lorem ipsum dolor sit amet consectetur <br>
+                        adipisicing elit. Dolorum similique labore a sed. V <br>
+                        oluptatibus, deleniti et. Maiores asperiores iste ex <br>
+                    </div>
+
+                </div>
+                <div class="review-1">
+                    <div class="review-box">
+                        <div class="review-box-img"></div>
+                        <div class="review-box-text">
+                            <h1>John Stark</h1>
+                            <h3>Artist</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="review-rat">
+                        <h1>3.5
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </h1>
+                    </div>
+
+                    <div class="review-text">Lorem ipsum dolor sit amet consectetur <br>
+                        adipisicing elit. Dolorum similique labore a sed. V <br>
+                        oluptatibus, deleniti et. Maiores asperiores iste ex <br>
+                    </div>
+
+                </div>
+                <div class="review-1">
+                    <div class="review-box">
+                        <div class="review-box-img"></div>
+                        <div class="review-box-text">
+                            <h1>John Stark</h1>
+                            <h3>Artist</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="review-rat">
+                        <h1>3.5
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </h1>
+                    </div>
+
+                    <div class="review-text">Lorem ipsum dolor sit amet consectetur <br>
+                        adipisicing elit. Dolorum similique labore a sed. V <br>
+                        oluptatibus, deleniti et. Maiores asperiores iste ex <br>
+                    </div>
+
+                </div>
+
+               
+
+            </div>
+        </section>
+       
+ 
+    <!-- =================newsletter=================== -->
+
+    <section class="newsletter" id="newsletter">
+
+        <div class="newsletter-container">
+            <div class="newsletter-roll1">
+                <h1> SUBCRIBE TO GET 30% OFF <br> ON YOUR FIRST BOOKING</h1>
+            </div>
+
+            <div class="newsletter-roll2">
+                <input type="text" name="Email" placeholder="Enter your email">
+                <button type="submit">send <i class='bx bx-right-arrow-alt'></i></button>
+            </div>
+
+
+        </div>
+
+       
+
+    </section>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>About Us</h4>
+              <p>We are a company that specializes in web design and development.</p>
+            </div>
+            <div class="col-md-3">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Contact Us</h4>
+              <ul>
+                <li>123 Main St</li>
+                <li>Anytown, USA 12345</li>
+                <li>(123) 456-7890</li>
+                <li>email@example.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer> 
+</body>
+</html>
