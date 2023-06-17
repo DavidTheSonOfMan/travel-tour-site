@@ -57,7 +57,27 @@
 
 
 
+@media screen and (max-width:425px) {
 
+    .sect1-h1 h1{
+        font-size: 40px;
+    }
+
+    .sect1-p p{
+        font-size: 20px;
+    }
+
+.button-container{
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+}
 
 
 
