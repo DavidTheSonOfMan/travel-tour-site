@@ -1,36 +1,66 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login To Piggyvest</title>
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
-<div class="sect1">
-    <img src="./assets/IMAGE (3).png" alt="" class="img">
-</div>
-<div class="sect2">
-    <div class="sect2-text">
-        <h1>Login to your account</h1>
-        <p>Securely login to your account</p>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Authentication class</title>
+  </head>
+  <body>
 
-  <form>
-    <label for="text">Email/Phone Number</label>
-    <input required type="text" name="text" id="text">
+   
 
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password">
-
-    <input type="button" id="button" value="LOG IN">
   
-  </form>
-</div>
 
+   <section class="container forms">
+      <div class="form login">
+        <div class="form-content">
+          <header>Login to your account</header>
+          <form action="#">
+            <div class="field input-field">
+              <input
+                class="input"
+                type="email"
+                placeholder="Email address"
+                id="inputEmail"
+              />
+            </div>
 
+            <div class="field input-field">
+              <input
+                class="password"
+                type="password"
+                placeholder="Password"
+                id="inputPassword"
+              />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
 
-    
-</body>
+            <div class="form-link">
+              <a href="#" class="forgot-pass">Forgot Password ?</a>
+            </div>
+
+            <div class="field button-field">
+              <button id="signin">Login</button>
+              <button class="none" id="signup">Login</button>
+            </div>
+          </form>
+
+          <div class="form-link">
+            <span
+              >Don't have an account?
+              <a href="signup.html" class="link signup-link">Signup</a></span
+            >
+          </div>
+        </div> 
+
+      </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -1,3 +1,186 @@
+ *{
+  padding: 0;
+  margin: 0;
+  /* background: linear-gradient(40deg, orange, rgb(187, 66, 18), orange); */
+ }
+ 
+ nav{
+  height: 6rem;
+  width: 100vw;
+  background-color: rgba(173, 163, 163, 0.789);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: relative;
+  z-index: 10;
+} 
+
+/*Styling logo*/
+.logo{
+  /* padding:1vh 1vw; */
+  align-items: center;
+  padding-left: 30px;
+}
+.logo img {
+  height: 7rem;
+  width: 18rem;
+}
+
+/*Styling Links*/
+.nav-links{
+  display: flex;
+  list-style: none; 
+  width: 88vw;
+  padding: 0 0.7vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+}
+.nav-links li a{
+  text-decoration: none;
+  margin: 0 0.7vw;
+  color:#ff5600;
+}
+ .nav-links li a:hover {
+  color: orange;
+} 
+.nav-links li {
+  position: relative;
+}
+.nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #61DAFB;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+  width: 80%;
+}
+
+/*Styling Buttons*/
+.login-button{
+  background-color: transparent;
+  border: 1.5px solid #f2f5f7;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  margin-left: 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+.login-button:hover {
+  color: #131418;
+  background-color: #f2f5f7;
+  border:1.5px solid #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+.join-button{
+  color: #131418;
+  background-color: #61DAFB;
+  border: 1.5px solid #61DAFB;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.join-button:hover {
+  color: #f2f5f7;
+  background-color: transparent;
+  border:1.5px solid #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+  width: 30px;
+  height:3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger{
+  display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+  nav{
+      position: relative;
+      z-index: 3;
+  }
+  .hamburger{
+      display:block;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      transition: all 0.7s ease;
+  }
+  .nav-links{
+      position: fixed;
+      background: #131418;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+  }
+  .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .nav-links li:nth-child(1){
+      transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2){
+      transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3){
+      transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4){
+      transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5){
+      transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6){
+      transition: all 0.5s ease 0.9s;
+      margin: 0;
+  }
+  .nav-links li:nth-child(7){
+      transition: all 0.5s ease 1s;
+      margin: 0;
+  }
+  li.fade{
+      opacity: 1;
+  }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  transition: all 0.7s ease;
+  width:0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
 /* ==============scroll up====================== */
 
 #myBtn {
@@ -23,16 +206,14 @@
   
   
   .container {
-       /* display: flex; */
-      /* justify-content: center; */
-      /* align-items: center;  */
       max-width: 500px;
       margin: 0 auto;
       padding: 15px;
-      background-color: #887e7e;
+      background-color:rgba(195, 183, 183, 0.713);
+      box-shadow: 3px 5px 5px 0px black ;
       border-radius: 10px;
-    height: 800px;
-      /* margin-left: 50px; */
+      height: 620px;
+      margin-top: 30px;
   }
   
   form {
@@ -46,8 +227,8 @@
   }
   
   input, textarea {
-      padding: 20px;
-      margin-bottom: 20px;
+      padding: 10px;
+      margin-bottom: 10px;
       border: none;
       border-radius: 5px;
       background-color: #fff;
@@ -55,8 +236,8 @@
   }
   
   .button {
-      padding: 20px 20px;
-      background-color: #fc5a8d;
+      padding: 10px 15px;
+      background-color: orange;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -65,28 +246,17 @@
   }
   
   .button:hover {
-      background-color: #c41589a2;
+      background-color: orangered;
   }
    
 
 
-/* 
-button{
-  width: 430px;
-  padding:30px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: orange;
-  color: black;
-  font-weight: bolder;
- 
-} */
+
 .select{
     display: flex;
-  /* width: 330px; */justify-content: space-between;
-  padding: 20px;
-  margin-bottom: 20px;
+ justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
   border: none;
   border-radius: 5px;
   background-color: #fff;
@@ -95,7 +265,13 @@ button{
 
 
 
-
+@media screen and (max-width:425px) {
+  .logo img {
+    width: 150px;
+    height: 80px;
+  }
+  
+}
 
 
 
