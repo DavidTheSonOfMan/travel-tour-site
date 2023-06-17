@@ -71,17 +71,14 @@
     flex-direction: column;
 }
 
-
-
-
-
-
-
 }
 
+@media screen and (max-width:320px) {
+    .sect1-p p{
+        font-size: 15px;
+    }
 
-
-
+}
 
 
 
