@@ -77,7 +77,9 @@
     .sect1-p p{
         font-size: 15px;
     }
-
+.sect1{
+    height: 100vh;
+}
 }
 
 
