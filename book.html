@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Page</title>
+  <!-- Include the Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+</head>
+
+
+
+<body>
+  <!-- <h1>Booking Page</h1>
+  <div id="loginSection">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button id="loginButton">Login</button>
+  </div> -->
+  <div id="bookingSection" style="display: none;">
+    <h2>Booking</h2>
+    <input type="text" id="bookingData" placeholder="Booking data"><br>
+    <button id="bookButton">Book</button>
+  </div>
+  <div id="result" style="display: none;"></div>
+
+
+  <script>
+    // Initialize Firebase with your project's configuration
+    const firebaseConfig = {
+    //   apiKey: "YOUR_API_KEY",
+    //   authDomain: "YOUR_AUTH_DOMAIN",
+    //   projectId: "YOUR_PROJECT_ID",
+    //   appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyDqElYn8SHO1CS3-ocT1_ieiqgwRfr2D7w",
+        authDomain: "c3-authentication.firebaseapp.com",
+        projectId: "c3-authentication",
+        storageBucket: "c3-authentication.appspot.com",
+        messagingSenderId: "547036415946",
+        appId: "1:547036415946:web:ef487d23b92c9aba2ab133"
+    };
+    
+    firebase.initializeApp(firebaseConfig);
+    
+    // Get DOM elements
+    const loginSection = document.getElementById("loginSection");
+    const bookingSection = document.getElementById("bookingSection");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+    const loginButton = document.getElementById("loginButton");
+    const bookingDataInput = document.getElementById("bookingData");
+    const bookButton = document.getElementById("bookButton");
+    const resultDiv = document.getElementById("result");
+    
+    // Firebase authentication instance
+    const auth = firebase.auth();
+    
+    // Firebase Firestore instance
+    const firestore = firebase.firestore();
+    
+    // Login event listener
+    // loginButton.addEventListener("click", function() {
+    //   const email = emailInput.value;
+    //   const password = passwordInput.value;
+    
+    //   // Sign in with email and password
+    //   auth.signInWithEmailAndPassword(email, password)
+    //     .then(function(userCredential) {
+    //       // Display booking section and hide login section
+    //       loginSection.style.display = "none";
+    //       bookingSection.style.display = "block";
+    //     })
+    //     .catch(function(error) {
+    //       // Show error message
+    //       displayResult("Login failed. Please try again.");
+    //     });
+    // });
+    
+    // Book event listener
+    bookButton.addEventListener("click", function() {
+      const bookingData = bookingDataInput.value;
+    
+      // Get the currently authenticated user
+      const user = auth.currentUser;
+    
+      // Store booking data in Firestore
+      firestore.collection("bookings").add({
+        userId: user.uid,
+        bookingData: bookingData
+      })
+        .then(function(docRef) {
+          // Show success message
+          displayResult("Booking successful!");
+        })
+        .catch(function(error) {
+          // Show error message
+          displayResult("Booking failed. Please try again.");
+        });
+    });
+    
+    // Function to display result message
+    function displayResult(message) {
+      resultDiv.style.display = "block";
+      resultDiv.textContent = message;
+    }
+    
+    
+      </script>
+</body>
+</html>

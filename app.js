@@ -52,7 +52,7 @@ signUpButton.addEventListener("click", (e) => {
 
 
 let signInButton = document.getElementById("signin");
-signInButton.addEventListener("click", (e)=> {
+signInButton.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("sign in clicked");
   var email = document.getElementById("inputEmail");
@@ -60,7 +60,7 @@ signInButton.addEventListener("click", (e)=> {
   
   auth
   .signInWithEmailAndPassword(email.value, password.value)
-  .then((userCredential)=> {
+  .then((userCredential) => {
       var user = userCredential.user;
       console.log("user", user.email);
       window.location = "landingpage.html";
