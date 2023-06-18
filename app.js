@@ -18,7 +18,7 @@
 //sign up function
 
 let signUpButton = document.getElementById("signup");
-signUpButton.addEventListener("click", (e)=> {
+signUpButton.addEventListener("click", (e) => {
   //prevent default from submission bahaviour
   e.preventDefault();
   console.log("clicked");
@@ -30,7 +30,7 @@ signUpButton.addEventListener("click", (e)=> {
   .createUserWithEmailAndPassword(email.value, password.value)
   .then((userCredential)=> {
     location.reload();
-    alert("user siged up successful");
+    alert("user signed up successful");
 
     //signed in
 
@@ -63,7 +63,7 @@ signInButton.addEventListener("click", (e)=> {
   .then((userCredential)=> {
       var user = userCredential.user;
       console.log("user", user.email);
-      window.location = "index.html";
+      window.location = "landingpage.html";
 })
 
 .catch((error)=> {
