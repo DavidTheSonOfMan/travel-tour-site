@@ -24,6 +24,22 @@ header{
     color: #232836;
     text-align: center;
 }
+.icon {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icon i{
+     font-size: 50px;
+     margin-top: 20px;
+     color: orangered;
+}
+p{
+    align-self: center;
+    display: flex;
+    justify-self: center;
+}
 
 form{
     margin-top: 20px;
