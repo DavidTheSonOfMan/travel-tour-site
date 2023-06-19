@@ -18,7 +18,7 @@ nav{
     height: 6rem;
     width: 100vw;
     background-color: transparent;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 20px rgba(146, 108, 108, 0.2);
     display: flex;
     position: relative;
     z-index: 10;
@@ -48,12 +48,13 @@ nav{
 .nav-links li a{
     text-decoration: none;
     margin: 0 0.7vw;
+    color: white;
 }
 /* .nav-links li a:hover {
     color: #61DAFB;
 } */
-.nav-links li {
-    position: relative;
+.nav-links li a{
+    /* position: relative; */
 }
 .nav-links li a::before {
     content: "";
@@ -61,7 +62,7 @@ nav{
     height: 3px;
     width: 0%;
     background-color: #61DAFB;
-    position: absolute;
+    position: relative;
     transition: all ease-in-out 250ms;
     margin: 0 0 0 10%;
 }
@@ -69,24 +70,30 @@ nav{
     width: 80%;
 }
 
+.marquee{
+   max-width: 50px;
+   max-height: 30px;
+}
+
 /*Styling Buttons*/
 .login-button{
     background-color: transparent;
     border: 1.5px solid #f2f5f7;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
+    /* border-radius: 1em; */
+    padding: 0.9rem 1.9rem;
     margin-left: 2vw;
     font-size: 1rem;
     cursor: pointer;
+    color: white;
 
 }
 .login-button:hover {
     color: #131418;
     background-color: #f2f5f7;
     border:1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
+    /* transition: all ease-in-out 350ms; */
 }
-.join-button{
+/* .join-button{
     color: #131418;
     background-color: #61DAFB;
     border: 1.5px solid #61DAFB;
@@ -100,7 +107,7 @@ nav{
     background-color: transparent;
     border:1.5px solid #f2f5f7;
     transition: all ease-in-out 350ms;
-}
+} */
 
 /*Styling Hamburger Icon*/
 .hamburger div{
@@ -131,7 +138,7 @@ nav{
         transition: all 0.7s ease;
     }
     .nav-links{
-        position: fixed;
+        position: relative;
         background: #131418;
         height: 100vh;
         width: 100%;
@@ -269,11 +276,11 @@ P{
 
 .aboutpage{
     width: 100%;
-    height: 600px;
+    height: 330px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(65deg, rgba(236, 12, 27, 0.689),orangered, red) ;
+    background-color: orange;
 }
 
 .about-h1 h1{
@@ -282,6 +289,7 @@ P{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
 .about-text h3{
@@ -316,11 +324,43 @@ P{
 .img1{
     width: 360px;
     height: 300px;
-    background-image: url(./assets/istockphoto-1161155723-612x612.jpg);
+    background-image: url(https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    border-radius: 15px;
+
+}
+.img2{
+    width: 360px;
+    height: 300px;
+    background-image: url(https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFyaXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    border-radius: 15px;
+
+}
+.img3{
+    width: 360px;
+    height: 300px;
+    background-image: url(https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bG9uZG9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=600);
     border-radius: 15px;
 
 }
 .img1 h2{
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 15px;
+}
+.img2 h2{
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 15px;
+}
+.img3 h2{
     width: 100px;
     height: 30px;
     background-color: orange;
@@ -340,6 +380,21 @@ P{
 
 .img-p p{
     font-size: 20px;
+}
+
+/* about us */
+
+.about-text h3{
+    text-align: center;
+    color: white;
+}
+
+.about-misson{
+    margin-top: 20px;
+}
+.about-misson h1{
+    font-size: 30px;
+    margin-top: 20px;
 }
 
 /* --------offer-------- */
@@ -1555,6 +1610,18 @@ footer {
     .sect0{
         height: 530px;
     }
+    .img1{
+        width: 230px;
+        height: 230px;
+    }
+    .img2{
+        width: 230px;
+        height: 230px;
+    }
+    .img3{
+        width: 230px;
+        height: 230px;
+    }
 
     .destination-img{
         flex-direction: row;
@@ -1817,6 +1884,12 @@ footer {
 .img1{
     width: 320px;
 }
+.img2{
+    width: 320px;
+}
+.img3{
+    width: 320px;
+}
 
 .review-1{
     width: 300px;
@@ -1836,7 +1909,7 @@ flex-direction: row;
 }
 
 .cont1{
-width:280px;
+width:300px;
 height: 450px;
 }
 .s3-img1{
@@ -1879,7 +1952,7 @@ width: 280px;
 width: 280px;
 }
 .cont2{
-width: 280px;
+width: 300px;
 height: 450px;
 }
 
@@ -1894,7 +1967,7 @@ flex-direction: row;
 }
 
 .cont3{
-width: 280px;
+width: 300px;
 height: 450px;
 } 
 .s5-img1{
@@ -1923,7 +1996,7 @@ flex-direction: row;
 }
 
 .cont4{
-width: 250px;
+width: 300px;
 height: 450px;
 } 
 .s6-img1{
@@ -1952,7 +2025,7 @@ flex-direction: row;
 }
 
 .cont5{
-width: 250px;
+width: 300px;
 height: 450px;
 } 
 .s7-img1{
@@ -1980,7 +2053,7 @@ flex-direction: row;
 }
 
 .cont6{
-width:250px;
+width:300px;
 height: 450px;
 } 
 .s8-img1{
@@ -2008,7 +2081,7 @@ flex-direction: row;
 }
 
 .cont7{
-width: 250px;
+width: 300px;
 height: 450px;
 } 
 
@@ -2052,7 +2125,7 @@ flex-direction: row;
 }
 
 .cont1{
-width:280px;
+width:300px;
 height: 450px;
 }
 .s3-img1{
@@ -2095,7 +2168,7 @@ width: 290px;
 width: 290px;
 }
 .cont2{
-width: 280px;
+width: 300px;
 height: 450px;
 }
 
@@ -2110,7 +2183,7 @@ flex-direction: row;
 }
 
 .cont3{
-width: 280px;
+width: 300px;
 height: 450px;
 } 
 .s5-img1{
@@ -2139,7 +2212,7 @@ flex-direction: row;
 }
 
 .cont4{
-width: 250px;
+width: 300px;
 height: 450px;
 } 
 .s6-img1{
@@ -2168,7 +2241,7 @@ flex-direction: row;
 }
 
 .cont5{
-width: 250px;
+width: 300px;
 height: 450px;
 } 
 .s7-img1{
@@ -2196,7 +2269,7 @@ flex-direction: row;
 }
 
 .cont6{
-width:250px;
+width:300px;
 height: 450px;
 } 
 .s8-img1{
@@ -2224,7 +2297,7 @@ flex-direction: row;
 }
 
 .cont7{
-width: 250px;
+width: 300px;
 height: 450px;
 } 
 
@@ -2245,7 +2318,7 @@ width: 290px;
     
 }
 
-?
+
 
 
 
