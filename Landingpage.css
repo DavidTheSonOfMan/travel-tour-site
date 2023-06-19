@@ -2336,7 +2336,12 @@ width: 290px;
     
 }
 
-
+@media screen and (max-width:600px) {
+    .aboutpage{
+        height: auto!important
+    }
+    
+}
 
 
 
