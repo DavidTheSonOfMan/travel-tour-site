@@ -65,9 +65,6 @@ signInButton.addEventListener("click", (e) => {
       console.log("user", user.email);
       window.location = "landingpage.html";
 
-      setTimeout(function() {
-        window.location.href = "login.html";
-      }, 8000);
 })
 
 .catch((error)=> {
@@ -79,10 +76,7 @@ signInButton.addEventListener("click", (e) => {
 });
 
 
-// Third timeout after 8 seconds
-setTimeout(function() {
-  window.location.href = "login.html";
-}, 8000);
+
 
 
 
