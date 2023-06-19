@@ -2,7 +2,7 @@
 nav{
   height: 6rem;
   width: 100vw;
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.628);
   box-shadow: 0 3px 20px rgba(146, 108, 108, 0.2);
   display: flex;
   position: relative;
