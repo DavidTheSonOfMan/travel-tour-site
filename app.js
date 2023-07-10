@@ -46,7 +46,7 @@ signUpButton.addEventListener("click", (e) => {
     console.log("error Message", errorMessage);
     alert(errorMessage);
   });
-});
+}); ;
 
 //SIGN IN FUNCTION
 

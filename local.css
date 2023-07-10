@@ -1,0 +1,163 @@
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    background-color: rgb(194, 216, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 5px 1px black;
+
+}
+
+
+.box1{
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1580491934424-f4d543ccbf05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+   
+}
+.box2{
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    background-color: rgb(60, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+#name{
+    padding: 10px 14px;
+}
+
+#number{
+    padding: 10px 14px;
+}
+
+#mail{
+    padding: 10px 14px;
+}
+
+
+#button{
+    padding: 10px 14px;
+    background-color: red;
+    color:white;
+    align-self: center;
+    margin-top: 10px;
+    border: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

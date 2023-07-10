@@ -53,9 +53,9 @@ nav{
 /* .nav-links li a:hover {
     color: #61DAFB;
 } */
-.nav-links li a{
+/* .nav-links li a{ */
     /* position: relative; */
-}
+/* } */
 .nav-links li a::before {
     content: "";
     display: block;
